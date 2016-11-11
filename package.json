@@ -1,0 +1,14 @@
+{
+  "name": " facerecognition_nodejs",
+  "version": "1.0.0",
+  "description": "Aplicação de reconhecimento de face utilizando node.js e JQuery",
+  "main": "app.js",
+  "keywords": [],
+  "author": "Gabriel Malinosqui",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "faced": "^1.2.0"
+  }
+}

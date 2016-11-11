@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reconhecimento facial</title>
+    <style>
+        /*reset*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        html {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .nav {
+            background-color: #303841;
+            padding: 20px;
+            width: 100vw;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: #EA9215;
+            -moz-border-radius: 28px;
+            -webkit-border-radius: 28px;
+            border-radius: 28px;
+            border: none;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 17px;
+            padding: 16px 31px;
+            text-decoration: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: #3A4750;
+        }
+        
+        .btn-primary:active {
+            position: relative;
+            top: 1px;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        .col {
+            margin-left: 10px;
+        }
+        
+        .container {
+            text-align: center;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav">
+        <h1>APS - Reconhecimento facial</h1>
+    </div>
+    <div class="row">
+        <div class="col">
+            <video id="video" width="640" height="480" autoplay></video>
+        </div>
+        <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+        <div class="col">
+            <img src="" alt="" id="result">
+        </div>
+    </div>
+    <div class="container">
+        <button id="snap" class="btn-primary">RECONHECER</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="./controllers/index.js"></script>
+</body>
+
+</html>
